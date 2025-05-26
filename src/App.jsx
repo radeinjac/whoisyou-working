@@ -5,12 +5,16 @@ export default function App() {
       <header style={styles.header}>
         <div style={styles.logo}>Who Is You</div>
         <nav style={styles.nav}>
-          <a href="#book">Book</a>
-          <a href="#coaching">Coaching</a>
-          <a href="#blog">Blog</a>
-          <a href="#contact">Contact</a>
-          <a href="#lang">🌍</a>
-        </nav>
+  <a href="#book">Book</a>
+  <a href="#coaching">Coaching</a>
+  <a href="#blog">Blog</a>
+  <a href="#contact">Contact</a>
+  <div style={styles.langSwitcher}>
+    <button onClick={() => setLang('en')} style={styles.langBtn}>EN</button>
+    <button onClick={() => setLang('sl')} style={styles.langBtn}>SL</button>
+    <button onClick={() => setLang('sr')} style={styles.langBtn}>SR</button>
+  </div>
+</nav>
       </header>
 
       {/* Hero */}
