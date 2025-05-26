@@ -32,7 +32,7 @@ export default function App() {
         <p>Book a 1-on-1 session or a team workshop. Be heard, guided, and empowered.</p>
         <button
   style={styles.button}
-  onClick={() => window.open('https://calendly.com/yourname', '_blank')}
+  onClick={() => window.open('https://calendly.com/radeinjac', '_blank')}
 >
   Book Appointment
 </button>
