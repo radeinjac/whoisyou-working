@@ -30,7 +30,12 @@ export default function App() {
       <section id="coaching" style={styles.sectionAlt}>
         <h2 style={styles.sectionTitle}>🧠 Coaching & Consulting</h2>
         <p>Book a 1-on-1 session or a team workshop. Be heard, guided, and empowered.</p>
-        <button style={styles.button}>Book Appointment</button>
+        <button
+  style={styles.button}
+  onClick={() => window.open('https://calendly.com/yourname', '_blank')}
+>
+  Book Appointment
+</button>
       </section>
 
       {/* Blog */}
