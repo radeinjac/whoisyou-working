@@ -1,5 +1,8 @@
 export default function App() {
-  return (
+  import { useState } from 'react';
+
+const [lang, setLang] = useState('en');
+return (
     <div style={styles.page}>
       {/* Header */}
       <header style={styles.header}>
@@ -166,3 +169,18 @@ const styles = {
     marginTop: '3rem',
   },
 };
+  langSwitcher: {
+    display: 'flex',
+    gap: '0.5rem',
+    alignItems: 'center',
+  },
+
+  langBtn: {
+    padding: '0.3rem 0.6rem',
+    fontSize: '0.9rem',
+    borderRadius: '4px',
+    border: '1px solid #fff',
+    background: 'transparent',
+    color: '#fff',
+    cursor: 'pointer',
+  }
